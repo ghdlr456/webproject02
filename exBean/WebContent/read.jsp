@@ -9,7 +9,6 @@
  List<studentVO> items = new ArrayList<studentVO>(); 
  items = dao.selectStudent(); 
 %> 
-
 <html> 
 <head> 
 <title="셀렉트해보기"> 
