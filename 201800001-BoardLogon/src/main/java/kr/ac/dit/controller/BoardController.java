@@ -29,7 +29,7 @@ public class BoardController {
 		   MultipartFile uploadFile = boardVO.getUploadFile();
 		   if (!uploadFile.isEmpty()) {
 		     String fileName = uploadFile.getOriginalFilename();
-		     uploadFile.transferTo(new File("C:/Users/Seok Choi/Documents/" + fileName));
+		     uploadFile.transferTo(new File("C:/upload/" + fileName));
 		   }
 		boardService.createArticle(boardVO);
 		return "redirect:/board/list";
